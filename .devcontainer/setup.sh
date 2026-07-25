@@ -1,28 +1,28 @@
 #!/usr/bin/env bash
-# Hackatsuon Starter - 環境セットアップスクリプト
-# Codespace の初回起動時に自動実行されます(数分かかります)
+# Hackatsuon Starter - environment setup script
+# Runs automatically the first time the Codespace starts (takes a few minutes)
 
 set -x
 
-# 1. Claude Code(AIコーディングエージェント)のインストール
+# 1. Install Claude Code (the AI coding agent)
 curl -fsSL https://claude.ai/install.sh | bash
 
-# PATH を通す(bash / zsh 両対応)
+# Put it on the PATH (works for both bash and zsh)
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$HOME/.profile"
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$HOME/.bashrc"
 echo 'export ANTHROPIC_MODEL="claude-sonnet-4-6"' >> "$HOME/.bashrc"
 
-# 2. wrangler(Cloudflare デプロイ用CLI)のインストール
+# 2. Install wrangler (the CLI for deploying to Cloudflare)
 npm install -g wrangler
 
-# 3. 簡易プレビュー用の http-server
+# 3. http-server, for quick previews
 npm install -g http-server
 
-# 新しいターミナルを開くたびに案内を表示する
+# Show a short guide every time a new terminal is opened
 cat << 'BANNER' >> "$HOME/.bashrc"
 echo ""
-echo "🐟 Hackatsuon Starter へようこそ!"
-echo "   環境チェック: claude --version && wrangler --version"
-echo "   次の一歩は README.md の Step 3 から"
+echo "🐟 Welcome to Hackatsuon Starter!"
+echo "   Check your environment: claude --version && wrangler --version"
+echo "   Your next step is Step 3 in README.md"
 echo ""
 BANNER

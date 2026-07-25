@@ -3,74 +3,335 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hackatsuon Starter</title>
-<style>
-  :root {
-    --ink: #1b2a3a;      /* the Sanriku sea at night */
-    --paper: #f6f4ef;    /* sailcloth */
-    --accent: #c8451f;   /* the vermilion of a big-catch flag */
-    --wave: #2e6f8e;     /* the sea by day */
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-    background: var(--paper);
-    color: var(--ink);
-    min-height: 100svh;
-    display: grid;
-    place-items: center;
-    padding: 2rem;
-  }
-  main { max-width: 34rem; text-align: center; }
-  .flag {
-    display: inline-block;
-    background: var(--accent);
-    color: var(--paper);
-    font-weight: 700;
-    letter-spacing: 0.35em;
-    padding: 0.4rem 1.2rem 0.4rem 1.55rem;
-    margin-bottom: 2rem;
-  }
-  h1 {
-    font-size: clamp(1.8rem, 6vw, 2.6rem);
-    line-height: 1.4;
-    margin-bottom: 1.2rem;
-  }
-  h1 em {
-    font-style: normal;
-    color: var(--wave);
-    border-bottom: 4px solid var(--accent);
-  }
-  p { line-height: 1.9; color: #445; }
-  .hint {
-    margin-top: 2.5rem;
-    font-size: 0.85rem;
-    text-align: left;
-    background: #fff;
-    border-left: 4px solid var(--wave);
-    padding: 1rem 1.2rem;
-  }
-  code {
-    background: var(--ink);
-    color: var(--paper);
-    padding: 0.15em 0.5em;
-    border-radius: 3px;
-    font-size: 0.9em;
-  }
-</style>
+<title>Kesennuma — a working fishing port on the Sanriku coast | Kazamachi Journeys</title>
+<meta name="description" content="An English guide to Kesennuma, Miyagi: one of Japan's great fishing ports. Weekend itineraries for food, the outdoors, and history — plus custom trips and local guiding.">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<main>
-  <span class="flag">READY TO SAIL</span>
-  <h1>If you can see this page,<br>your <em>deploy worked</em></h1>
-  <p>
-    This is the starting point for your app.<br>
-    Now rewrite this page into whatever it is you want to build.
-  </p>
-  <div class="hint">
-    Try telling Claude Code something like:<br>
-    <code>Rewrite index.html into an app that does ___</code>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./index.html">
+      Kazamachi <span>Journeys</span>
+      <small>Kesennuma</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="./index.html" aria-current="page">Home</a>
+      <a href="./itineraries.html">Weekend itineraries</a>
+      <a href="./about.html">About us</a>
+    </nav>
   </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="flag">Sanriku coast, Miyagi</span>
+      <h1>Come for a weekend in a port that <em>still goes to sea</em></h1>
+      <p>
+        Kesennuma is not a museum of fishing. Boats unload before dawn, buyers bid on
+        the market floor, and the town eats what came in that morning. Two and a half
+        hours from Sendai, and almost nobody on your flight will have heard of it.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="./itineraries.html">Plan your weekend →</a>
+        <a class="btn btn-ghost" href="./about.html">Have us build the trip</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>3 itineraries</strong> Food · Outdoors · History</div>
+        <div><strong>2 nights</strong> is enough to feel it</div>
+        <div><strong>Fri–Sun</strong> but the market sleeps on Sundays</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Why here</p>
+      <h2>A fishing town that decided to keep facing the water</h2>
+      <p class="lede">
+        Kesennuma sits on a ria coastline of drowned valleys and deep, sheltered inlets,
+        beside one of the richest fishing grounds in the Pacific. Four things make a
+        weekend here different from a weekend anywhere else in Tōhoku.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <span class="card-num">01</span>
+          <h3>The catch is the culture</h3>
+          <p>
+            Bonito, Pacific saury, swordfish, oysters, sea squirt, wakame — and sharks.
+            For nearly three decades Kesennuma landed more fresh bonito than any other
+            port in Japan; the run broke with 2025's poor season and the 2026 fleet has
+            been busy taking it back. Pole-and-line bonito fishing arrived here in 1675.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-num">02</span>
+          <h3>Coast you can walk into</h3>
+          <p>
+            Kesennuma carries 102&nbsp;km of the Michinoku Coastal Trail — the longest
+            stretch inside any single municipality on the route. Marble sea stacks,
+            camellia tunnels, boulders the 2011 tsunami threw ashore, and a Blue Flag
+            beach on an island you can now cycle to.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-num">03</span>
+          <h3>"Live with the sea"</h3>
+          <p>
+            <span class="jp">海と生きる</span> — the town's own subtitle for its
+            reconstruction plan after the 2011 earthquake and tsunami. It explains the
+            landscape: barriers designed to keep the water in view, a preserved ruined
+            school, a museum that catalogued the disaster object by object.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-num">04</span>
+          <h3>Nobody is performing for you</h3>
+          <p>
+            There is no tourist quarter. You eat in the alley where the truck drivers eat,
+            at 7&nbsp;a.m., because that is when the boats are in. English is thin on the
+            ground — which is exactly why the trip is worth taking, and why some people
+            bring a guide.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">New this month</p>
+      <h2>Kameyama Terrace 360°, opened 19 July 2026</h2>
+      <p>
+        Mount Kameyama, 235&nbsp;m, is the high point of Ōshima island and the best view
+        on this coast: the ria inlets, the bay, the bridges, and the open Pacific behind
+        them. The chairlift that used to serve it was lost around the 2011 disaster, and
+        for fifteen years the summit meant a walk.
+      </p>
+      <p>
+        As of 19 July 2026 there is a monorail — roughly a six-to-seven-minute ride,
+        departures around every twenty minutes, step-free and wheelchair accessible, with
+        four viewing terraces and a weekend café stand at the top. It converts the single
+        best panorama in the area into something a family with a pushchair or a visitor
+        with limited mobility can reach. No English guidebook in print mentions it yet.
+      </p>
+      <div class="note warn">
+        <h4>Two things to know</h4>
+        <ul>
+          <li>The monorail stops running in bad weather, and the site closes in the
+              mid-afternoon — this is a morning or early-afternoon plan, not a sunset one.</li>
+          <li>Hours and fares were set at opening and will shift by season. Check
+              <a href="https://kameyama360.jp/" rel="noopener">kameyama360.jp</a> the week you travel.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Three ways to spend two nights</p>
+      <h2>Pick the weekend that sounds like you</h2>
+      <p class="lede">
+        Each itinerary is built for a Friday evening arrival and a Sunday afternoon
+        departure, with the practical traps flagged — which museums close on Tuesdays,
+        which experiences need booking a week out, and which days the fish market sleeps.
+      </p>
+
+      <div class="cards">
+        <a class="teaser" href="./itineraries.html#food">
+          <h3>1. Landed This Morning</h3>
+          <p>
+            Food and drink. A dawn guided tour of the fish market floor, breakfast in a
+            trailer-house alley where you can carry your drink from one shop to the next,
+            a sake brewery in a 1930s registered building, and pork offal grilled the way
+            this town invented it.
+          </p>
+          <span class="more">See the food weekend →</span>
+        </a>
+        <a class="teaser" href="./itineraries.html#outdoors">
+          <h3>2. Ria Coast, On Foot and On Water</h3>
+          <p>
+            Outdoors. An island day by e-bike, the new monorail up Kameyama, sea kayaking
+            in a sheltered strait, then a ten-kilometre clifftop trail past a sea stack
+            snapped by the tsunami of 1896.
+          </p>
+          <span class="more">See the outdoor weekend →</span>
+        </a>
+        <a class="teaser" href="./itineraries.html#history">
+          <h3>3. Live With the Sea</h3>
+          <p>
+            Culture and history. A school building left as the water left it, a museum
+            that catalogued the disaster object by object, merchant houses rebuilt plank
+            by plank, and a tiger dance performed so the boats come home.
+          </p>
+          <span class="more">See the history weekend →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Getting here</p>
+      <h2>Easier than it looks on the map</h2>
+      <dl class="facts">
+        <div>
+          <dt>From Tokyo</dt>
+          <dd>Tōhoku Shinkansen to Ichinoseki (一ノ関), then the JR Ōfunato Line to
+              Kesennuma — around 85 minutes for that second leg, with a train every one
+              to two hours. Roughly four hours door to door. Covered by the Japan Rail Pass.</dd>
+        </div>
+        <div>
+          <dt>From Sendai</dt>
+          <dd>About two hours via Ichinoseki by rail, or a direct highway bus down the
+              Sanriku Expressway in around two and a half hours. No reservation on the
+              bus — seating is first come, first served.</dd>
+        </div>
+        <div>
+          <dt>Nearest airport</dt>
+          <dd>Sendai (SDJ). The Airport Access Line reaches Sendai Station in under
+              half an hour; rental cars are available at the airport.</dd>
+        </div>
+        <div>
+          <dt>The coastal "railway"</dt>
+          <dd>South and north of Kesennuma, the Kesennuma Line and Ōfunato Line run as
+              BRT — bus rapid transit on the old railbed — rather than trains. Suica works
+              on the BRT. Kesennuma's <em>local</em> city buses are cash only.</dd>
+        </div>
+        <div>
+          <dt>Once you're here</dt>
+          <dd>The port core — station, inner bay, fish market — works on foot and by
+              rental bike, including e-assist bikes you can drop at a different branch for
+              a small surcharge. The Karakuwa peninsula and Mount Tokusenjō really do want
+              a car or a taxi; bus service out there is sparse and has been reorganised.</dd>
+        </div>
+        <div>
+          <dt>Ōshima island</dt>
+          <dd>Reached by road since the Ōshima Ōhashi bridge opened in 2019. <strong>There
+              is no longer a scheduled passenger ferry</strong> — it ran for about a century
+              and stopped the day the bridge opened. Older guidebooks still get this wrong.
+              Cycle it, drive it, or take the island bus; sightseeing cruises are cruises,
+              not transport.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap wrap-narrow">
+      <p class="eyebrow">Before you commit</p>
+      <h2>Honest expectations</h2>
+      <p>
+        We would rather you arrive prepared than delighted by the brochure and stranded
+        on the day.
+      </p>
+      <div class="note">
+        <h4>Tuesday and Wednesday are the awkward days</h4>
+        <p>
+          The Karakuwa visitor centre, the cruise office, the bike rental desks and the
+          campground office each close on one or both. The Rias Ark Museum of Art closes
+          Mondays <em>and</em> Tuesdays. The memorial museum closes Mondays.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Sunday costs you the market and the breweries</h4>
+        <p>
+          The city fish market does not run on Sundays, and both sake brewery shops are
+          closed Sundays or weekdays-only. A Friday or Saturday morning arrival is worth
+          real money here.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Carry cash, and assume Japanese</h4>
+        <p>
+          Card acceptance at small independent restaurants and market stalls is patchy and
+          we have not been able to verify it venue by venue. Outside the experiences
+          arranged through the tourism bureau, assume Japanese menus and Japanese-speaking
+          staff. A translation app goes a long way; a guide goes further.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Book experiences before you fly</h4>
+        <p>
+          The good things have lead times: roughly three days for the fish market morning
+          tour, about a week for a brewery tour or a cooking class, up to two weeks for an
+          oyster-raft boat trip. Several have a two-person minimum, and English guiding is
+          often a paid add-on or limited to larger groups.
+        </p>
+      </div>
+      <div class="note warn">
+        <h4>This is tsunami country, and that is not a metaphor</h4>
+        <p>
+          A magnitude 7.7 earthquake struck offshore on 20 April 2026, and the trail club
+          has kept an aftershock advisory live since. There is also a bear warning covering
+          the whole Michinoku Coastal Trail from June 2026. Before any hike, read the
+          alerts at
+          <a href="https://m-tc.org/en/news/attention/" rel="noopener">m-tc.org</a>.
+          Learn where the high ground is, and move inland and uphill on strong shaking or
+          any warning.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <p class="eyebrow" style="color:#ffd9cd">Kazamachi Journeys</p>
+      <h2>Or let someone who lives here write it</h2>
+      <p>
+        We build custom itineraries for Kesennuma and the Karakuwa peninsula, and we guide
+        in English — the market floor at dawn, the coastal trail, the oyster rafts, the
+        conversations you can't have with a phrasebook.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="./about.html">About us and what we do →</a>
+        <a class="btn btn-ghost" href="./itineraries.html">Read the free itineraries</a>
+      </div>
+    </div>
+  </section>
+
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>Kazamachi Journeys</h2>
+        <p>
+          Custom itineraries and English-language guiding in Kesennuma, Miyagi.
+          <span class="jp">風待ち</span> — "waiting for the wind," the old name for the
+          inner-bay district where sailing ships once waited for weather.
+        </p>
+      </div>
+      <div>
+        <h2>This site</h2>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./itineraries.html">Weekend itineraries</a></li>
+          <li><a href="./about.html">About us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Official sources</h2>
+        <ul>
+          <li><a href="https://en.kesennuma-kanko.jp/" rel="noopener">Kesennuma Tourism &amp; Convention Bureau (EN)</a></li>
+          <li><a href="https://visit-kesennuma.com/" rel="noopener">Visit Kesennuma</a></li>
+          <li><a href="https://m-tc.org/en/news/attention/" rel="noopener">Michinoku Coastal Trail alerts</a></li>
+          <li><a href="https://www.kesennuma-memorial.jp/english/" rel="noopener">Kesennuma City Memorial Museum</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-base">
+      Compiled from official Japanese and English sources in July 2026. Opening hours,
+      fares, seasons and event dates in this part of Japan change often — always confirm
+      with the operator before you travel. Nothing here is a booking.
+    </p>
+  </div>
+</footer>
+
 </body>
 </html>

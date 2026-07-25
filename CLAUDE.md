@@ -1,16 +1,17 @@
-# このリポジトリのお作法(AI向けの前提)
+# Conventions for this repository (context for AI)
 
-これは Hackatsuon ワークショップの1ページ Web アプリです。GitHub Pages で
-`https://ユーザー名.github.io/リポジトリ名/` というサブパス配下に公開されます。
+This is a single-page web app for the Hackatsuon workshop. It's published on GitHub Pages
+under a subpath like `https://username.github.io/repository-name/`.
 
-以下のルールを必ず守ってください:
+Always follow these rules:
 
-- トップページは、リポジトリ直下の `index.html`。移動・改名しない
-- CSS と JavaScript は小規模なら `index.html` の中にインラインで書く(1ファイル完結)
-- ファイルを分ける場合も、参照は必ず相対パス(`./style.css`)。
-  絶対パス(`/style.css`)はサブパス配下で壊れるため禁止
-- ビルドツール(npm, バンドラ等)は使わない。ブラウザでそのまま動く素の
-  HTML / CSS / JS だけで書く
-- データの保存が必要なら、まずは localStorage を使う
-- 利用者は日本語話者。画面の文言は日本語で
-- スマホでも見やすいレスポンシブなレイアウトにする
+- The top page is `index.html` at the root of the repository. Don't move or rename it
+- If the CSS and JavaScript are small, write them inline in `index.html`
+  (everything in one file)
+- Even when you do split files, always reference them with relative paths (`./style.css`).
+  Absolute paths (`/style.css`) are forbidden, because they break under a subpath
+- Don't use build tools (npm, bundlers, etc.). Write plain HTML / CSS / JS that runs
+  in the browser as-is
+- If you need to store data, start with localStorage
+- The users are Japanese speakers. Write the on-screen text in Japanese
+- Use a responsive layout that's easy to read on a phone too
